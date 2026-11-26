@@ -387,3 +387,33 @@ main>.intro-hero::after,main>.principles-ribbon::after{display:none}
 .office-content .value{text-align:center}
 .office-content>.btn-row{justify-content:center}
 @media(max-width:600px){.office-content>.btn-row{align-items:center}.office-content>.btn-row .btn{width:min(100%,320px)}}
+.person-photo{position:relative;aspect-ratio:4/5;overflow:hidden;margin:0 0 19px;padding:5px;border:1px solid rgba(178,147,96,.58);border-radius:15px;background:#faf8f2;box-shadow:0 9px 22px rgba(48,43,34,.09)}
+.person-photo img{display:block;width:100%;height:100%;border-radius:10px;object-fit:cover;object-position:center 30%;transition:transform .55s cubic-bezier(.2,.65,.3,1)}
+.person:hover .person-photo img{transform:scale(1.025)}
+.btn{border-width:1.5px;border-radius:10px;font-family:var(--serif);font-size:16px;font-weight:500;letter-spacing:0;text-transform:none}
+.site-header .header-cta{border-width:1.5px;border-radius:10px;font-family:var(--serif);font-size:15px;font-weight:500;letter-spacing:0;text-transform:none}
+.footer-col .footer-whatsapp{color:var(--gold-light);text-decoration:underline;text-decoration-color:rgba(210,189,145,.45);text-underline-offset:4px}
+.whatsapp-float{position:fixed;z-index:31;right:24px;bottom:22px;display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:10px 18px;border:1.5px solid var(--gold-light);border-radius:999px;background:var(--ink);color:var(--ivory);box-shadow:0 8px 24px rgba(20,18,14,.22);font-family:var(--serif);font-size:16px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.whatsapp-float:hover{transform:translateY(-3px);background:#3c3527;box-shadow:0 12px 28px rgba(20,18,14,.28)}
+.whatsapp-float svg{width:24px;height:24px;fill:none;stroke:var(--gold-light);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.whatsapp-float svg path+path{fill:var(--gold-light);stroke:none}
+@media(max-width:600px){.person-photo{aspect-ratio:4/5}.whatsapp-float{right:14px;bottom:14px;min-height:50px;padding:9px 14px;font-size:15px}.whatsapp-float svg{width:22px;height:22px}}
+@media(min-width:901px){.main-nav{position:absolute;left:50%;transform:translateX(-50%)}}
+.intro-photo,.about-photo,.area-card-image,.person-photo{padding:5px;border:1px solid rgba(178,147,96,.58);border-radius:15px;background:#faf8f2;box-shadow:0 9px 22px rgba(48,43,34,.09)}
+.intro-photo img,.about-photo img,.area-card-image img,.person-photo img{border-radius:10px}
+.intro-photo:after,.about-photo:after,.area-card-image:after{content:none}
+
+/* Refinos finais solicitados para a marca, o contato e a imagem principal. */
+.brand-hero-content{padding:24px;}
+.brand-hero .hero-brand-lockup{margin:0 auto;}
+.brand-tagline{display:none;}
+.contact-cta .cta-layout{display:flex;flex-direction:column;align-items:center;gap:26px;text-align:center;}
+.contact-cta .cta-layout>div{width:min(100%,760px);}
+.contact-cta h2,.contact-cta p{margin-inline:auto;}
+.contact-cta .cta-layout .btn{min-width:260px;min-height:64px;padding:20px 34px;font-size:19px;}
+.whatsapp-float{width:64px;height:64px;min-height:64px;padding:0;display:grid;place-items:center;border:0;border-radius:50%;background:#19cf67;color:#fff;box-shadow:0 10px 28px rgba(25,207,103,.28);transition:transform .2s ease,box-shadow .2s ease,background .2s ease;}
+.whatsapp-float:hover{transform:translateY(-3px) scale(1.03);background:#13bd5c;box-shadow:0 14px 32px rgba(25,207,103,.36);}
+.whatsapp-float svg{width:39px;height:39px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;}
+.whatsapp-float svg path+path{fill:#fff;stroke:none;}
+.whatsapp-float span{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+@media(max-width:600px){.brand-hero-content{padding:20px 16px;}.brand-hero .hero-brand-lockup{width:clamp(290px,82vw,390px);margin:0 auto;}.contact-cta .cta-layout{align-items:center;gap:22px;}.contact-cta .cta-layout .btn{width:min(100%,300px);min-width:0;min-height:60px;padding:18px 24px;font-size:18px;}.whatsapp-float{right:18px;bottom:18px;width:60px;height:60px;min-height:60px;}.whatsapp-float svg{width:37px;height:37px;}}
